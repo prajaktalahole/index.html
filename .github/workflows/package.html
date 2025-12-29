@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages | Horizon Travels</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 5%;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Pricing Table Wrapper */
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Individual Cards */
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Highlighting the Featured Package */
+        .featured {
+            border: 2px solid #ff7e5f;
+            transform: scale(1.05);
+            background-color: #fffaf9;
+        }
+
+        .package-card h2 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff7e5f;
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Features List */
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .features li::before {
+            content: "✓ ";
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff7e5f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Travel Packages</h1>
+        <p>Choose the experience that fits your journey</p>
+    </header>
+
+    <div class="container">
+        <div class="pricing-table">
+            
+            <div class="package-card">
+                <h2>Backpacker</h2>
+                <div class="price">$499<span>/ 5 Days</span></div>
+                <ul class="features">
+                    <li>Shared Hostel Stay</li>
+                    <li>Daily Breakfast</li>
+                    <li>Group Walking Tours</li>
+                    <li>Public Transport Pass</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#" class="btn">Choose Backpacker</a>
+            </div>
+
+            <div class="package-card featured">
+                <div style="background: #ff7e5f; color: white; padding: 5px; border-radius: 5px; font-size: 0.8rem; margin-bottom: 10px;">MOST POPULAR</div>
+                <h2>Explorer</h2>
+                <div class="price">$1,299<span>/ 7 Days</span></div>
+                <ul class="features">
+                    <li>3-Star Hotel Stay</li>
+                    <li>All Meals Included</li>
+                    <li>Private Guided Tours</li>
+                    <li>Airport Transfers</li>
+                    <li>Travel Insurance</li>
+                </ul>
+                <a href="#" class="btn" style="background-color: #ff7e5f;">Choose Explorer</a>
+            </div>
+
+            <div class="package-card">
+                <h2>Elite</h2>
+                <div class="price">$2,999<span>/ 10 Days</span></div>
+                <ul class="features">
+                    <li>5-Star Resort Stay</li>
+                    <li>Fine Dining Experiences</li>
+                    <li>Private Jet/First Class</li>
+                    <li>Personal Concierge</li>
+                    <li>Exclusive VIP Access</li>
+                </ul>
+                <a href="#" class="btn">Choose Elite</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Horizon Travels. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
