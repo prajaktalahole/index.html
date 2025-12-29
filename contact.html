@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Horizon Travels</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Left Side: Contact Info */
+        .contact-info {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 40px;
+            min-width: 300px;
+        }
+
+        .contact-info h2 {
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Right Side: Contact Form */
+        .contact-form-wrapper {
+            flex: 1.5;
+            padding: 40px;
+            min-width: 300px;
+        }
+
+        .contact-form-wrapper h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #ff7e5f;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #e66a4e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <aside class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Have questions about a package? Our travel experts are ready to help you plan your next trip.</p>
+            
+            <div class="info-item" style="margin-top: 30px;">
+                <h3>📍 Office Address</h3>
+                <p>123 Travel Lane, Adventure City, NY 10001</p>
+            </div>
+
+            <div class="info-item">
+                <h3>📞 Phone</h3>
+                <p>+1 (555) 123-4567</p>
+            </div>
+
+            <div class="info-item">
+                <h3>✉️ Email</h3>
+                <p>support@horizontravels.com</p>
+            </div>
+        </aside>
+
+        <main class="contact-form-wrapper">
+            <h2>Send us a Message</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="e.g. Booking Inquiry">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Horizon Travels. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
